@@ -1,0 +1,73 @@
+<root>
+  <body scaling="1" output_gain="1">
+    <joints>
+      <joint id="0">
+        <has_sensor>false</has_sensor>
+        <is_head>false</is_head>
+        <position x="240" y="152" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+      <joint id="1">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="264" y="152" />
+        <mass>1</mass>
+        <angular_springs>
+          <spring id="0">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="0" />
+            <limbB id="1" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="2">
+        <has_sensor>false</has_sensor>
+        <is_head>false</is_head>
+        <position x="288" y="152" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+    </joints>
+    <limbs>
+      <limb id="0">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="0" />
+        <jointB id="1" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="1">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="1" />
+        <jointB id="2" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+    </limbs>
+  </body>
+  <brain>
+    <input_layer>
+      <signals>
+        <signal name="centroid x position" id="-1" active="false" />
+        <signal name="centroid y position" id="-1" active="false" />
+        <signal name="centroid x velocity" id="-1" active="false" />
+        <signal name="centroid y velocity" id="-1" active="false" />
+        <signal name="mean angle" id="-1" active="false" />
+        <signal name="mean ang.vel" id="-1" active="false" />
+        <signal name="joint contact" id="1" active="true" />
+        <signal name="angular muscle angle" id="0" active="true" />
+        <signal name="angular muscle ang.vel." id="0" active="true" />
+      </signals>
+    </input_layer>
+    <hidden_layers />
+    <output_layer>
+      <neurons>1</neurons>
+    </output_layer>
+  </brain>
+</root>
