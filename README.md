@@ -32,4 +32,4 @@ To make a linear or angular spring a muscle, you need to click on the spring and
 
 ## How to Build and Run
 
-This program requires you to build a dll from [`CSMathLib`](https://github.com/razterizer/CSMathLib) and to add that as a reference in the `csproj`-project of this repo. Then just build and run.
+This program requires you to build a dll from [`CSMathLib`](https://github.com/razterizer/CSMathLib) and to add that as a reference in the `csproj`-project of this repo (replace the old one). Then just build and run.
