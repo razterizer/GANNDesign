@@ -48,6 +48,10 @@
             this.tabPageBrain.SuspendLayout();
             this.SuspendLayout();
             // 
+            // toolTipData
+            // 
+            this.toolTipData.OwnerDraw = true;
+            // 
             // tabControlDesign
             // 
             this.tabControlDesign.Controls.Add(this.tabPageBody);

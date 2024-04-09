@@ -1,0 +1,584 @@
+<root>
+  <body scaling="0.3" output_gain="0.1">
+    <joints>
+      <joint id="0">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="216" y="112" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="24">
+            <is_muscle>false</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="11" />
+            <limbB id="29" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+          <spring id="25">
+            <is_muscle>false</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="5" />
+            <limbB id="29" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="4">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="384" y="120" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="28">
+            <is_muscle>false</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="8" />
+            <limbB id="29" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="7">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="256" y="160" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="13">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="14" />
+            <limbB id="5" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+          <spring id="26">
+            <is_muscle>false</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="5" />
+            <limbB id="28" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="9">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="360" y="168" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="16">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="20" />
+            <limbB id="8" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+          <spring id="27">
+            <is_muscle>false</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="28" />
+            <limbB id="8" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="10">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="408" y="96" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="7">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="9" />
+            <limbB id="10" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="11">
+        <has_sensor>true</has_sensor>
+        <is_head>true</is_head>
+        <position x="448" y="112" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+      <joint id="12">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="176" y="96" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="1">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="12" />
+            <limbB id="11" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="13">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="152" y="120" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="0">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="13" />
+            <limbB id="12" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="14">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="104" y="96" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+      <joint id="15">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="208" y="192" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="17">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="14" />
+            <limbB id="15" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="16">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="240" y="240" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="21">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="15" />
+            <limbB id="16" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="17">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="216" y="240" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+      <joint id="19">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="248" y="192" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="18">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="24" />
+            <limbB id="18" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="20">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="280" y="240" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="22">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="19" />
+            <limbB id="18" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="21">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="256" y="240" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+      <joint id="22">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="384" y="200" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="20">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="21" />
+            <limbB id="20" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="23">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="352" y="240" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="24">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="22" />
+            <limbB id="21" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="24">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="376" y="240" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+      <joint id="27">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="368" y="200" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="19">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="25" />
+            <limbB id="26" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="28">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="320" y="240" />
+        <mass>0.5</mass>
+        <angular_springs>
+          <spring id="23">
+            <is_muscle>true</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="27" />
+            <limbB id="26" />
+            <stiffness>600</stiffness>
+            <damping>1</damping>
+          </spring>
+        </angular_springs>
+      </joint>
+      <joint id="29">
+        <has_sensor>true</has_sensor>
+        <is_head>false</is_head>
+        <position x="336" y="240" />
+        <mass>0.5</mass>
+        <angular_springs />
+      </joint>
+    </joints>
+    <limbs>
+      <limb id="5">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="0" />
+        <jointB id="7" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="8">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="9" />
+        <jointB id="4" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="9">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="4" />
+        <jointB id="10" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="10">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="10" />
+        <jointB id="11" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="11">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="0" />
+        <jointB id="12" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="12">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="12" />
+        <jointB id="13" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="13">
+        <is_muscle>true</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="13" />
+        <jointB id="14" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="14">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="7" />
+        <jointB id="15" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="15">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="15" />
+        <jointB id="16" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="16">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="16" />
+        <jointB id="17" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="18">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="19" />
+        <jointB id="20" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="19">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="20" />
+        <jointB id="21" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="20">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="9" />
+        <jointB id="22" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="21">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="22" />
+        <jointB id="23" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="22">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="23" />
+        <jointB id="24" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="24">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="19" />
+        <jointB id="7" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="25">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="9" />
+        <jointB id="27" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="26">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="27" />
+        <jointB id="28" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="27">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="28" />
+        <jointB id="29" />
+        <stiffness>1000</stiffness>
+        <damping>0.5</damping>
+      </limb>
+      <limb id="28">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="7" />
+        <jointB id="9" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+      <limb id="29">
+        <is_muscle>false</is_muscle>
+        <muscle_gain>1</muscle_gain>
+        <jointA id="0" />
+        <jointB id="4" />
+        <stiffness>100</stiffness>
+        <damping>1</damping>
+      </limb>
+    </limbs>
+  </body>
+  <brain>
+    <input_layer>
+      <signals>
+        <signal name="centroid x position" id="-1" active="true" />
+        <signal name="centroid y position" id="-1" active="true" />
+        <signal name="centroid x velocity" id="-1" active="true" />
+        <signal name="centroid y velocity" id="-1" active="true" />
+        <signal name="mean angle" id="-1" active="true" />
+        <signal name="mean ang.vel" id="-1" active="true" />
+        <signal name="joint contact" id="0" active="true" />
+        <signal name="joint contact" id="4" active="true" />
+        <signal name="joint contact" id="7" active="true" />
+        <signal name="joint contact" id="9" active="true" />
+        <signal name="joint contact" id="10" active="true" />
+        <signal name="joint contact" id="11" active="true" />
+        <signal name="joint contact" id="12" active="true" />
+        <signal name="joint contact" id="13" active="true" />
+        <signal name="joint contact" id="14" active="true" />
+        <signal name="joint contact" id="15" active="true" />
+        <signal name="joint contact" id="16" active="true" />
+        <signal name="joint contact" id="17" active="true" />
+        <signal name="joint contact" id="19" active="true" />
+        <signal name="joint contact" id="20" active="true" />
+        <signal name="joint contact" id="21" active="true" />
+        <signal name="joint contact" id="22" active="true" />
+        <signal name="joint contact" id="23" active="true" />
+        <signal name="joint contact" id="24" active="true" />
+        <signal name="joint contact" id="27" active="true" />
+        <signal name="joint contact" id="28" active="true" />
+        <signal name="joint contact" id="29" active="true" />
+        <signal name="linear muscle length" id="5" active="true" />
+        <signal name="linear muscle velocity" id="5" active="true" />
+        <signal name="linear muscle length" id="8" active="true" />
+        <signal name="linear muscle velocity" id="8" active="true" />
+        <signal name="linear muscle length" id="9" active="true" />
+        <signal name="linear muscle velocity" id="9" active="true" />
+        <signal name="linear muscle length" id="10" active="true" />
+        <signal name="linear muscle velocity" id="10" active="true" />
+        <signal name="linear muscle length" id="11" active="true" />
+        <signal name="linear muscle velocity" id="11" active="true" />
+        <signal name="linear muscle length" id="12" active="true" />
+        <signal name="linear muscle velocity" id="12" active="true" />
+        <signal name="linear muscle length" id="13" active="true" />
+        <signal name="linear muscle velocity" id="13" active="true" />
+        <signal name="angular muscle angle" id="13" active="true" />
+        <signal name="angular muscle ang.vel." id="13" active="true" />
+        <signal name="angular muscle angle" id="16" active="true" />
+        <signal name="angular muscle ang.vel." id="16" active="true" />
+        <signal name="angular muscle angle" id="7" active="true" />
+        <signal name="angular muscle ang.vel." id="7" active="true" />
+        <signal name="angular muscle angle" id="1" active="true" />
+        <signal name="angular muscle ang.vel." id="1" active="true" />
+        <signal name="angular muscle angle" id="0" active="true" />
+        <signal name="angular muscle ang.vel." id="0" active="true" />
+        <signal name="angular muscle angle" id="17" active="true" />
+        <signal name="angular muscle ang.vel." id="17" active="true" />
+        <signal name="angular muscle angle" id="21" active="true" />
+        <signal name="angular muscle ang.vel." id="21" active="true" />
+        <signal name="angular muscle angle" id="18" active="true" />
+        <signal name="angular muscle ang.vel." id="18" active="true" />
+        <signal name="angular muscle angle" id="22" active="true" />
+        <signal name="angular muscle ang.vel." id="22" active="true" />
+        <signal name="angular muscle angle" id="20" active="true" />
+        <signal name="angular muscle ang.vel." id="20" active="true" />
+        <signal name="angular muscle angle" id="24" active="true" />
+        <signal name="angular muscle ang.vel." id="24" active="true" />
+        <signal name="angular muscle angle" id="19" active="true" />
+        <signal name="angular muscle ang.vel." id="19" active="true" />
+        <signal name="angular muscle angle" id="23" active="true" />
+        <signal name="angular muscle ang.vel." id="23" active="true" />
+      </signals>
+    </input_layer>
+    <hidden_layers>
+      <layer>
+        <is_recurrent>true</is_recurrent>
+        <neurons>100</neurons>
+      </layer>
+      <layer>
+        <is_recurrent>true</is_recurrent>
+        <neurons>60</neurons>
+      </layer>
+      <layer>
+        <is_recurrent>true</is_recurrent>
+        <neurons>20</neurons>
+      </layer>
+      <layer>
+        <is_recurrent>false</is_recurrent>
+        <neurons>30</neurons>
+      </layer>
+      <layer>
+        <is_recurrent>true</is_recurrent>
+        <neurons>40</neurons>
+      </layer>
+      <layer>
+        <is_recurrent>false</is_recurrent>
+        <neurons>50</neurons>
+      </layer>
+    </hidden_layers>
+    <output_layer>
+      <neurons>20</neurons>
+    </output_layer>
+  </brain>
+</root>
