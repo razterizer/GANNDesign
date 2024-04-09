@@ -146,7 +146,7 @@ namespace GANNDesign
 
         private static void draw_grid(Graphics g)
         {
-            for (int x_idx = 0; x_idx < 80; x_idx++)
+            for (int x_idx = 0; x_idx < 100; x_idx++)
                 for (int y_idx = 0; y_idx < 60; y_idx++)
                     g.FillEllipse(Brushes.Silver, (float)x_idx / 60 * 480 - 0.5f, (float)y_idx / 60 * 480 - 0.5f, 2, 2);
         }

@@ -32,9 +32,7 @@
             this.toolTipData = new System.Windows.Forms.ToolTip(this.components);
             this.tabControlDesign = new System.Windows.Forms.TabControl();
             this.tabPageBody = new System.Windows.Forms.TabPage();
-            this.canvasBodyDesign = new GANNSim.Canvas();
             this.tabPageBrain = new System.Windows.Forms.TabPage();
-            this.canvasBrainDesign = new GANNSim.Canvas();
             this.buttonSave = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.buttonLoad = new System.Windows.Forms.Button();
@@ -43,6 +41,8 @@
             this.textBoxScaling = new System.Windows.Forms.TextBox();
             this.labelOutputGain = new System.Windows.Forms.Label();
             this.textBoxOutputGain = new System.Windows.Forms.TextBox();
+            this.canvasBodyDesign = new GANNSim.Canvas();
+            this.canvasBrainDesign = new GANNSim.Canvas();
             this.tabControlDesign.SuspendLayout();
             this.tabPageBody.SuspendLayout();
             this.tabPageBrain.SuspendLayout();
@@ -54,12 +54,15 @@
             // 
             // tabControlDesign
             // 
+            this.tabControlDesign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControlDesign.Controls.Add(this.tabPageBody);
             this.tabControlDesign.Controls.Add(this.tabPageBrain);
             this.tabControlDesign.Location = new System.Drawing.Point(12, 12);
             this.tabControlDesign.Name = "tabControlDesign";
             this.tabControlDesign.SelectedIndex = 0;
-            this.tabControlDesign.Size = new System.Drawing.Size(606, 376);
+            this.tabControlDesign.Size = new System.Drawing.Size(686, 423);
             this.tabControlDesign.TabIndex = 0;
             // 
             // tabPageBody
@@ -68,23 +71,10 @@
             this.tabPageBody.Location = new System.Drawing.Point(4, 22);
             this.tabPageBody.Name = "tabPageBody";
             this.tabPageBody.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBody.Size = new System.Drawing.Size(598, 350);
+            this.tabPageBody.Size = new System.Drawing.Size(678, 397);
             this.tabPageBody.TabIndex = 0;
             this.tabPageBody.Text = "Body";
             this.tabPageBody.UseVisualStyleBackColor = true;
-            // 
-            // canvasBodyDesign
-            // 
-            this.canvasBodyDesign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.canvasBodyDesign.Location = new System.Drawing.Point(0, 0);
-            this.canvasBodyDesign.Name = "canvasBodyDesign";
-            this.canvasBodyDesign.Size = new System.Drawing.Size(598, 350);
-            this.canvasBodyDesign.TabIndex = 0;
-            this.canvasBodyDesign.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasBodyDesign_Paint);
-            this.canvasBodyDesign.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvasBodyDesign_MouseDown);
-            this.canvasBodyDesign.MouseLeave += new System.EventHandler(this.canvasBodyDesign_MouseLeave);
-            this.canvasBodyDesign.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvasBodyDesign_MouseMove);
-            this.canvasBodyDesign.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canvasBodyDesign_MouseUp);
             // 
             // tabPageBrain
             // 
@@ -98,22 +88,10 @@
             this.tabPageBrain.UseVisualStyleBackColor = true;
             this.tabPageBrain.Enter += new System.EventHandler(this.tabPageBrain_Enter);
             // 
-            // canvasBrainDesign
-            // 
-            this.canvasBrainDesign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.canvasBrainDesign.Location = new System.Drawing.Point(0, 0);
-            this.canvasBrainDesign.Name = "canvasBrainDesign";
-            this.canvasBrainDesign.Size = new System.Drawing.Size(598, 350);
-            this.canvasBrainDesign.TabIndex = 1;
-            this.canvasBrainDesign.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasBrainDesign_Paint);
-            this.canvasBrainDesign.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvasBrainDesign_MouseDown);
-            this.canvasBrainDesign.MouseLeave += new System.EventHandler(this.canvasBrainDesign_MouseLeave);
-            this.canvasBrainDesign.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvasBrainDesign_MouseMove);
-            this.canvasBrainDesign.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canvasBrainDesign_MouseUp);
-            // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(12, 408);
+            this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSave.Location = new System.Drawing.Point(12, 455);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 2;
@@ -129,7 +107,8 @@
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(93, 408);
+            this.buttonLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonLoad.Location = new System.Drawing.Point(93, 455);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(75, 23);
             this.buttonLoad.TabIndex = 3;
@@ -144,8 +123,9 @@
             // 
             // labelScaling
             // 
+            this.labelScaling.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelScaling.AutoSize = true;
-            this.labelScaling.Location = new System.Drawing.Point(202, 394);
+            this.labelScaling.Location = new System.Drawing.Point(202, 441);
             this.labelScaling.Name = "labelScaling";
             this.labelScaling.Size = new System.Drawing.Size(45, 13);
             this.labelScaling.TabIndex = 0;
@@ -153,7 +133,8 @@
             // 
             // textBoxScaling
             // 
-            this.textBoxScaling.Location = new System.Drawing.Point(205, 410);
+            this.textBoxScaling.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxScaling.Location = new System.Drawing.Point(205, 457);
             this.textBoxScaling.Name = "textBoxScaling";
             this.textBoxScaling.Size = new System.Drawing.Size(100, 20);
             this.textBoxScaling.TabIndex = 1;
@@ -161,8 +142,9 @@
             // 
             // labelOutputGain
             // 
+            this.labelOutputGain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelOutputGain.AutoSize = true;
-            this.labelOutputGain.Location = new System.Drawing.Point(308, 395);
+            this.labelOutputGain.Location = new System.Drawing.Point(308, 442);
             this.labelOutputGain.Name = "labelOutputGain";
             this.labelOutputGain.Size = new System.Drawing.Size(67, 13);
             this.labelOutputGain.TabIndex = 0;
@@ -170,17 +152,50 @@
             // 
             // textBoxOutputGain
             // 
-            this.textBoxOutputGain.Location = new System.Drawing.Point(311, 411);
+            this.textBoxOutputGain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxOutputGain.Location = new System.Drawing.Point(311, 458);
             this.textBoxOutputGain.Name = "textBoxOutputGain";
             this.textBoxOutputGain.Size = new System.Drawing.Size(100, 20);
             this.textBoxOutputGain.TabIndex = 1;
             this.textBoxOutputGain.Text = "0.5";
             // 
+            // canvasBodyDesign
+            // 
+            this.canvasBodyDesign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.canvasBodyDesign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.canvasBodyDesign.Location = new System.Drawing.Point(0, 0);
+            this.canvasBodyDesign.Name = "canvasBodyDesign";
+            this.canvasBodyDesign.Size = new System.Drawing.Size(678, 397);
+            this.canvasBodyDesign.TabIndex = 0;
+            this.canvasBodyDesign.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasBodyDesign_Paint);
+            this.canvasBodyDesign.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvasBodyDesign_MouseDown);
+            this.canvasBodyDesign.MouseLeave += new System.EventHandler(this.canvasBodyDesign_MouseLeave);
+            this.canvasBodyDesign.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvasBodyDesign_MouseMove);
+            this.canvasBodyDesign.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canvasBodyDesign_MouseUp);
+            // 
+            // canvasBrainDesign
+            // 
+            this.canvasBrainDesign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.canvasBrainDesign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.canvasBrainDesign.Location = new System.Drawing.Point(0, 0);
+            this.canvasBrainDesign.Name = "canvasBrainDesign";
+            this.canvasBrainDesign.Size = new System.Drawing.Size(598, 350);
+            this.canvasBrainDesign.TabIndex = 1;
+            this.canvasBrainDesign.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasBrainDesign_Paint);
+            this.canvasBrainDesign.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvasBrainDesign_MouseDown);
+            this.canvasBrainDesign.MouseLeave += new System.EventHandler(this.canvasBrainDesign_MouseLeave);
+            this.canvasBrainDesign.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvasBrainDesign_MouseMove);
+            this.canvasBrainDesign.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canvasBrainDesign_MouseUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 443);
+            this.ClientSize = new System.Drawing.Size(710, 490);
             this.Controls.Add(this.textBoxOutputGain);
             this.Controls.Add(this.labelOutputGain);
             this.Controls.Add(this.textBoxScaling);
