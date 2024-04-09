@@ -7,19 +7,19 @@
         <position x="216" y="112" />
         <mass>0.5</mass>
         <angular_springs>
-          <spring id="24">
-            <is_muscle>false</is_muscle>
-            <muscle_gain>1</muscle_gain>
-            <limbA id="11" />
-            <limbB id="29" />
-            <stiffness>1000</stiffness>
-            <damping>1</damping>
-          </spring>
           <spring id="25">
             <is_muscle>false</is_muscle>
             <muscle_gain>1</muscle_gain>
             <limbA id="5" />
-            <limbB id="29" />
+            <limbB id="28" />
+            <stiffness>1000</stiffness>
+            <damping>1</damping>
+          </spring>
+          <spring id="29">
+            <is_muscle>false</is_muscle>
+            <muscle_gain>1</muscle_gain>
+            <limbA id="11" />
+            <limbB id="28" />
             <stiffness>1000</stiffness>
             <damping>1</damping>
           </spring>
@@ -31,11 +31,11 @@
         <position x="384" y="120" />
         <mass>0.5</mass>
         <angular_springs>
-          <spring id="28">
+          <spring id="26">
             <is_muscle>false</is_muscle>
             <muscle_gain>1</muscle_gain>
-            <limbA id="8" />
-            <limbB id="29" />
+            <limbA id="28" />
+            <limbB id="8" />
             <stiffness>1000</stiffness>
             <damping>1</damping>
           </spring>
@@ -55,11 +55,11 @@
             <stiffness>600</stiffness>
             <damping>1</damping>
           </spring>
-          <spring id="26">
+          <spring id="27">
             <is_muscle>false</is_muscle>
             <muscle_gain>1</muscle_gain>
             <limbA id="5" />
-            <limbB id="28" />
+            <limbB id="29" />
             <stiffness>1000</stiffness>
             <damping>1</damping>
           </spring>
@@ -79,10 +79,10 @@
             <stiffness>600</stiffness>
             <damping>1</damping>
           </spring>
-          <spring id="27">
+          <spring id="28">
             <is_muscle>false</is_muscle>
             <muscle_gain>1</muscle_gain>
-            <limbA id="28" />
+            <limbA id="29" />
             <limbB id="8" />
             <stiffness>1000</stiffness>
             <damping>1</damping>
@@ -464,16 +464,16 @@
       <limb id="28">
         <is_muscle>false</is_muscle>
         <muscle_gain>1</muscle_gain>
-        <jointA id="7" />
-        <jointB id="9" />
+        <jointA id="0" />
+        <jointB id="4" />
         <stiffness>100</stiffness>
         <damping>1</damping>
       </limb>
       <limb id="29">
         <is_muscle>false</is_muscle>
         <muscle_gain>1</muscle_gain>
-        <jointA id="0" />
-        <jointB id="4" />
+        <jointA id="7" />
+        <jointB id="9" />
         <stiffness>100</stiffness>
         <damping>1</damping>
       </limb>
