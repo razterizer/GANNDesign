@@ -86,6 +86,11 @@ namespace GANNDesign.body
         #endregion
 
         #region LIMB METHODS
+        public static void set_global_id_ctr(int ctr)
+        {
+            m_global_id_ctr = ctr;
+        }
+
         public void AddLimb(Limb limb)
         {
             m_limbs.Add(limb);

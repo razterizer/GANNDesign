@@ -101,5 +101,12 @@ namespace GANNDesign.body
             set;
         }
         #endregion
+
+        #region region METHODS
+        public static void set_global_id_ctr(int ctr)
+        {
+            m_global_id_ctr = ctr;
+        }
+        #endregion
     }
 }

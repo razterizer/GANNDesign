@@ -917,6 +917,10 @@ namespace GANNDesign
 
                 XmlNode joints_node = body_node["joints"];
 
+                int max_joint_id = 0;
+                int max_limb_id = 0;
+                int max_ang_spring_id = 0;
+
                 foreach (XmlNode joint_node in joints_node.ChildNodes)
                 {
                     int id = int.Parse(joint_node.Attributes["id"].Value);
@@ -933,6 +937,9 @@ namespace GANNDesign
                     XmlNode mass_node = joint_node["mass"];
                     float mass = float.Parse(mass_node.InnerText, System.Globalization.NumberFormatInfo.InvariantInfo);
 
+                    if (id > max_joint_id)
+                        max_joint_id = id;
+
                     Joint joint = new Joint(pos);
                     joint.ID = id;
                     joint.HasContactSensor = has_sensor;
@@ -940,6 +947,7 @@ namespace GANNDesign
                     joint.Mass = mass;
                     m_joints.Add(joint);
                 }
+                Joint.set_global_id_ctr(max_joint_id + 1); // Fix global counter messed up in above loop.
 
                 XmlNode limbs_node = body_node["limbs"];
                 foreach (XmlNode limb_node in limbs_node)
@@ -973,6 +981,9 @@ namespace GANNDesign
                     }
                     if (joint_A != null && joint_B != null)
                     {
+                        if (id > max_limb_id)
+                            max_limb_id = id;
+
                         Limb limb = new Limb(joint_A, joint_B);
                         limb.ID = id;
                         limb.IsMuscle = is_muscle;
@@ -982,6 +993,7 @@ namespace GANNDesign
                         m_limbs.Add(limb);
                     }
                 }
+                Limb.set_global_id_ctr(max_limb_id + 1); // Fix global counter messed up in above loop.
 
                 foreach (XmlNode joint_node in joints_node)
                 {
@@ -1027,6 +1039,9 @@ namespace GANNDesign
                         }
                         if (joint_C != null && limb_A != null && limb_B != null)
                         {
+                            if (id > max_ang_spring_id)
+                                max_ang_spring_id = id;
+
                             AngularSpring spring = new AngularSpring(joint_C, limb_A, limb_B);
                             spring.ID = id;
                             spring.IsMuscle = is_muscle;
@@ -1037,6 +1052,7 @@ namespace GANNDesign
                         }
                     }
                 }
+                AngularSpring.set_global_id_ctr(max_ang_spring_id + 1); // Fix global counter messed up in above loop.
 
                 XmlNode brain_node = root_node["brain"];
 
